@@ -1,0 +1,17 @@
+model:
+  src_vocab_size: 10000
+  tgt_vocab_size: 10000
+  embed_size: 256
+  num_layers: 4
+  num_heads: 4
+  ff_hidden: 2048
+  dropout: 0.1
+  max_len: 100
+
+training:
+  batch_size: 32
+  learning_rate: 0.0001
+  num_epochs: 1000
+  device: "cuda"  # "cuda" or "cpu"
+  save_frequency: 500
+  checkpoint_dir: "checkpoints_bharat"
